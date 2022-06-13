@@ -15,3 +15,14 @@ function getNumberInfo() {
     // Display Information in the Browser
     document.getElementById("numinfo").innerHTML = txt;
 }
+
+// Function to Perform Abundant Check
+function abundantCheck(num) {
+    let sum = 1;
+    for (let i=2;i<=Math.sqrt(num);i++) {
+        if (num%i===0) sum += i + +(i !== Math.sqrt(num) && num/i);
+    }
+
+    return sum > num;
+}
+
