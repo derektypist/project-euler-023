@@ -42,3 +42,26 @@ The function `sumOfNonAbundantNumbers(n)` returns a number, where `n` is a numbe
 ## Features
 
 Allows the user to enter a number as well as getting the sum of all the positive integers (less than or equal to that number) that cannot be written as the sum of two abundant numbers.  Performs checks on valid user input.  If the input is not valid, an error message is displayed.
+
+## Technologies
+
+Uses HTML5, CSS3, JavaScript, Bootstrap 5.2.0-Beta1 and Google Fonts.
+
+## Testing
+
+Ensure all user stories have been met.
+
+## Deployment
+
+Deployed on [GitHub Pages](https://derektypist.github.io/project-euler-023) at the main branch.
+
+## Credits
+
+### Content
+
+Written by me.
+
+### Acknowledgements
+
+- [Project Euler](https://projecteuler.net)
+- [FreeCodeCamp](https://www.freecodecamp.org)
