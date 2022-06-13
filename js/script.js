@@ -26,3 +26,32 @@ function abundantCheck(num) {
     return sum > num;
 }
 
+/* 
+    Function to find the sum of all the positive integers that cannot be
+    written as the sum of two abundant numbers
+    sumOfNonAbundantNumbers(10000) returns 3731004
+    sumOfNonAbundantNumbers(15000) returns 4039939
+    sumOfNonAbundantNumbers(20000) returns 4159710
+    sumOfNonAbundantNumbers(28123) returns 4179871
+*/
+function sumOfNonAbundantNumbers(n) {
+    let sum = 0;
+    const memo = {};
+    let abundantList = [];
+    const checkSum = (num,stack,memo) => {
+        for (let i=0;i<stack.length;i++) {
+            if ((num-stack[i]) in memo) return true;
+        }
+        return false;
+    };
+
+    for (let i=1;i<=n;i++) {
+        if (abundantCheck(i)) {
+            abundantList.push(i);
+            memo[i] = 1;
+        }
+        if (checkSum(i,abundantList,memo)) continue;
+        sum += i;
+    }
+    return sum;
+}
