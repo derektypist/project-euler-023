@@ -26,17 +26,25 @@
 
     <!-- Set Up Form -->
     <section class="container-fluid">
-        <!-- Set Up Label and Input -->
-        <article class="mb-3">
-            <label for="mynumber" class="form-label">Number (Required)</label>
-            <input class="form-control" placeholder="Enter whole number between 2 and 28123 (e.g. 10000)" title="Enter whole number between 2 and 28123 (e.g. 10000)" id="mynumber">
-        </article>
+        <form>
+            <!-- Set Up Label and Input -->
+            <article class="mb-3">
+                <label for="mynumber" class="form-label">Number (Required)</label>
+                <input class="form-control" placeholder="Enter whole number between 2 and 28123 (e.g. 10000)" title="Enter whole number between 2 and 28123 (e.g. 10000)" id="mynumber">
+            </article>
 
-        <!-- Set Up and Center Buttons -->
-        <article class="d-grid gap-2 d-flex justify-content-center">
-            <button type="button" onclick="getNumberInfo()" class="btn btn-info">Submit</button>
-            <button type="reset" onclick="clearInfo()" class="btn btn-warning">Reset</button>
-        </article>
+            <!-- Set Up and Center Buttons -->
+            <article class="d-grid gap-2 d-flex justify-content-center">
+                <button type="button" onclick="getNumberInfo()" class="btn btn-info">Submit</button>
+                <button type="reset" onclick="clearInfo()" class="btn btn-warning">Reset</button>
+            </article>
+        </form>
+
+        <!-- Display Number Information -->
+        <p id="numinfo"></p>
+
+        <!-- Load Script -->
+        <script src="js/script.js"></script>
     </section>
 </body>
 </html>
