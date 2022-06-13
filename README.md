@@ -30,4 +30,8 @@ As a user, I expect the function `sumOfNonAbundantNumbers(28123)` to return 4179
 
 **Information Architecture**
 
-The function `sumOfNonAbundantNumbers(n)` returns a number, where `n` is a number.
+The function `sumOfNonAbundantNumbers(n)` returns a number, where `n` is a number between 2 and 28123.
+
+## Features
+
+Allows the user to enter a number as well as getting the sum of all the positive integers (less than or equal to that number) that cannot be written as the sum of two abundant numbers.  Performs checks on valid user input.  If the input is not valid, an error message is displayed.
