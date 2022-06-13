@@ -12,6 +12,10 @@ Information at [Project Euler 023](https://projecteuler.net/problem=23)
 
 ## UX
 
+**Getting Started**
+
+Enter a whole number between 2 and 28123 and click on the Submit Button.  As long as your input is valid, you will see the number entered as well as the sum of all the positive integers (less than or equal to that number) that cannot be written as the sum of two abundant numbers.  For example, if you entered 10000, you would expect to get 3731004.  Click on the Reset Button to clear the information or to start again.
+
 **User Stories**
 
 As a user, I expect the function `sumOfNonAbundantNumbers(10000)` to return a number.
