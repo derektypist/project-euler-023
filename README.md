@@ -18,6 +18,13 @@ Enter a whole number between 2 and 28123 and click on the Submit Button.  As lon
 
 **User Stories**
 
+As a user, I expect to get an error message, if I do any of:
+
+- Not enter anything in the input field
+- Enter text other than a number
+- Entering a number less than 2 or greater than 28123
+- Entering a number, but it is not an integer
+
 As a user, I expect the function `sumOfNonAbundantNumbers(10000)` to return a number.
 
 As a user, I expect the function `sumOfNonAbundantNumbers(10000)` to return 3731004.
